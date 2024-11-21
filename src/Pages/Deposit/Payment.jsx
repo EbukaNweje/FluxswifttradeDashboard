@@ -30,7 +30,7 @@ const Payment = () => {
     const dispatch = useDispatch()
 
     const [state, setState] = useState({
-        value: `${paymentname === "BTC"? ("bc1q32dlzwz8ex07jvn6lk5j82dpwdald592y7jjtn"): paymentname === "ETH"? ("0x25d013129a956066CE8D1b4f7A8EC774F9765556"): paymentname === "USDT"? ("TNzUyjTyozWs9PexNqTSRJtfsNjLEAL3sf"): paymentname === "BNB"? ("bnb1ddkdes097ghtwdy5z60cc8k3yq4q80h2afjngj"):paymentname === "SOLANA"? ("9GfBzvSKMtQHXhvv6HtEKqUxzZNeThbZ31wKBRNbjuvn"): paymentname === "BNBBSC"? ("0x25d013129a956066CE8D1b4f7A8EC774F9765556"): paymentname === "XRP"? ("rfPHWxRjDjzXjmzoYkctzDA1tBs6MoGwD1"):paymentname === "LITECOIN"? ("LhWm5ihc49i98L27hw8PVQrNqbzfj9QuGK"): paymentname === "DODGECOIN"? ("DQhP5YExsqkPRdJ2LEwiSBVtzhjwigcv9B"): "Chosse a Payment Method"}`,
+        value: `${paymentname === "BTC"? ("bc1qqf5j4wzcj8dym6d8whgx6mxhhlwqkhlm5gk0k3"): paymentname === "ETH"? ("0xB15ed8119060Fa14E1611064864235Fc8EF6E4b7"): paymentname === "USDT"? ("TNzUyjTyozWs9PexNqTSRJtfsNjLEAL3sf"): paymentname === "BNB"? ("bnb1ddkdes097ghtwdy5z60cc8k3yq4q80h2afjngj"):paymentname === "SOLANA"? ("AG4rbbnBW6euB5H4JXMAcfBcjDCurP6QRWU2dvXkNyCK"): paymentname === "BNBBSC"? ("0x25d013129a956066CE8D1b4f7A8EC774F9765556"): paymentname === "XRP"? ("rBVoKH3aq4f4VyCJVEw8Uk2mA3xVPz6wkE"):paymentname === "LITECOIN"? ("LhWm5ihc49i98L27hw8PVQrNqbzfj9QuGK"): paymentname === "DODGECOIN"? ("TAHRHYXVGyuJfkhSJxdbNnCywbSZoqwDzx"): "Chosse a Payment Method"}`,
         copied: false,
       });
 
