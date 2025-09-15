@@ -8,8 +8,6 @@ import { z } from "zod";
 import { toast, Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { ClipLoader } from 'react-spinners';
-import { FacebookFilled } from "@ant-design/icons";
-
 
 
 const Forgottenpassword = () => {
@@ -28,7 +26,7 @@ const Forgottenpassword = () => {
       const Onsubmit = async (data, e) => {
         e.preventDefault(); 
         setLoading(true)
-        const url = 'https://mybrokerbackend.onrender.com/api/forgotpassword'
+        const url = 'https://https://coinstarpro-bitminers-new-backnd-three.vercel.app/api/forgot-password'
         const FormData ={
             email: data.email
         }
@@ -38,24 +36,23 @@ const Forgottenpassword = () => {
             setLoading(false)
             console.log(res);
             toast.success(res.data.message) 
-            Nav('/')
-        }).catch( Error => {
+            Nav('/reset-password')
+        })
+        .catch( Error => {
             setLoading(false)
             console.log(Error);
             toast.error(Error.response.message)
         })
       }
 
-      const handleFacebook = (e) => {
-        // window.location.href = "https://www.facebook.com/profile.php?id=61574843025485"
-        console.log("first")
-      }
-
+    
     return (
         <div className="w-full h-screen">
             <div className="w-full h-12 bg-[#f8f8f8] phone:hidden px-48 flex items-center justify-between">
                 <div className="w-max flex items-center gap-4">
-                     <FacebookFilled onClick={handleFacebook}/>
+                    <FaTwitter />
+                    <FaTelegram />
+                    <FaInstagram />
                 </div>
                 <div className="w-max flex items-center gap-5 text-sm">
                     <div className="w-max h-max cursor-pointer">Help</div>
@@ -98,7 +95,7 @@ const Forgottenpassword = () => {
             </div>
             <div className="w-full phone:h-24 phone:gap-3 phone:flex-col phone:justify-center  phone:py-4 h-14 text-white px-48 flex items-center justify-between bg-[#0e1120]">
                 <div className="w-max flex items-center gap-4">
-                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Unix Swap Tradecu</p>
+                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved fininvestohub</p>
                 </div>
                 <div className="w-max flex items-center gap-5 ">
                     <FaTwitter />
